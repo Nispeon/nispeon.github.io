@@ -1,0 +1,9 @@
+$blue : red;
+$xl : 10%;
+$titre : 30px;
+
+h1 {
+    background-color: $blue;
+    padding: $xl;
+    font-size: $titre;
+}
