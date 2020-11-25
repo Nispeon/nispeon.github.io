@@ -1,4 +1,80 @@
-h1 {
-  background-color: red;
-  padding: 10%;
-  font-size: 30px; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.bigTitle {
+  color: #42495B;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 600; }
+
+.button {
+  background-color: blue;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px; }
+  .button--white {
+    background-color: #FFFFFF;
+    border: solid 1px blue; }
+
+.smallTitle {
+  color: #7E76F9;
+  font-family: "Lobster", cursive;
+  font-size: 20px;
+  font-weight: 400; }
+
+.navA, .footTit {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500; }
+
+.serv {
+  color: #7E76F9;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 400; }
+
+.footTit {
+  font-size: 20px; }
+
+.market {
+  color: #484848;
+  font-family: "Dosis", sans-serif;
+  font-size: 40px;
+  font-weight: 700; }
+
+.parag {
+  color: 300;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300; }
+
+.cardTitle {
+  color: #42495B;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600; }
+
+.price {
+  color: #1000FF;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600; }
+
+.pricePar {
+  color: #42495B;
+  font-family: "Lobster", cursive;
+  font-size: 48px;
+  font-weight: 400; }
+
+.newsP {
+  color: #42495B;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 400; }
+  .newsP--span {
+    font-weight: 600; }

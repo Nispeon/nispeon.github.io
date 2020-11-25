@@ -1,0 +1,10 @@
+.navA {
+    color: $White;
+    font-family: $Poppins;
+    font-size: $ParPx;
+    font-weight: $Medium;
+
+    &--foot {
+        font-weight: $Regular;
+    }
+}

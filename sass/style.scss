@@ -1,9 +1,19 @@
-$blue : red;
-$xl : 10%;
-$titre : 30px;
+//Helpers
+@import './helpers/_variables.scss';
 
-h1 {
-    background-color: $blue;
-    padding: $xl;
-    font-size: $titre;
-}
+//Components
+@import './components/_reset.scss';
+@import './components/_bigTitle.scss';
+@import './components/_buttons.scss';
+@import './components/_smallTitle.scss';
+@import './components/_navA.scss';
+@import './components/_serv.scss';
+@import './components/_footTit.scss';
+@import './components/_market.scss';
+@import './components/_parag.scss';
+@import './components/_cardTitle.scss';
+@import './components/_price.scss';
+@import './components/_pricePar.scss';
+@import './components/_newsP.scss';
+@import './components/_logo.scss';
+@import './components/_touch.scss';

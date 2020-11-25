@@ -1,0 +1,14 @@
+.button {
+
+    background-color: $BlueDeg;
+    color: $White;
+    font-family: $Poppins;
+    font-size: $ButPx;
+    font-weight: $Semi-Bold;
+    border-radius: 20px;
+
+    &--white {
+        background-color: $White;
+        border: solid 1px $BlueDeg;
+    }
+}
