@@ -68,12 +68,6 @@ a {
   font-size: 16px;
   font-weight: 300; }
 
-.cardTitle {
-  color: #42495B;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 600; }
-
 .price {
   color: #1000FF;
   font-family: "Poppins", sans-serif;
@@ -125,30 +119,67 @@ a {
   background-image: url("../../../img/background-we-are.png");
   background-size: cover; }
 
+.cardP {
+  color: #42495B;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400; }
+
+.cardTitle {
+  color: #42495B;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600; }
+
+.cardDiv {
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  box-shadow: 1px 11px 46px 2px rgba(126, 118, 249, 0.57);
+  width: 25%;
+  margin: auto;
+  padding: 20px 3%; }
+  .cardDiv > div {
+    margin: 20px 0; }
+
+.orderA {
+  margin: 100px 0; }
+
+.cards {
+  background-image: url("../../../img/background-service.png");
+  background-size: cover; }
+
 header {
   height: 100vh; }
 
-.flex, .flex--col, .flex--col-2, .flex--row, .center .d75 {
+.flex, .flex--col, .flex--col-2, .flex--col-3, .flex--row, .cardDiv, .center .d75, .cardDiv .d75 {
   display: flex; }
-  .flex--col, .flex--col-2 {
+  .flex--col, .flex--col-2, .flex--col-3 {
     flex-direction: row; }
     .flex--col-2 {
       flex-wrap: wrap; }
       .flex--col-2 nav, .flex--col-2 div, .flex--col-2 article, .flex--col-2 aside {
         width: 50%; }
-  .flex--row {
+    .flex--col-3 {
+      flex-wrap: wrap; }
+      .flex--col-3 > nav, .flex--col-3 > div, .flex--col-3 > aside {
+        width: 33%; }
+  .flex--row, .cardDiv {
     flex-direction: column; }
-    .flex--row p {
+    .flex--row #p1, .cardDiv #p1 {
       width: 75%; }
-    .flex--row .button {
+    .flex--row #b1, .cardDiv #b1 {
       margin-right: auto;
       margin-left: 12%;
       margin-top: 16px; }
+    .flex--row #b2, .cardDiv #b2 {
+      margin-right: auto;
+      margin-left: 24%;
+      margin-top: 16px; }
 
-.center {
+.center, .cardDiv {
   align-items: center;
   justify-content: center; }
-  .center .d75 {
+  .center .d75, .cardDiv .d75 {
     align-items: center;
     justify-content: left;
     width: 75%; }
@@ -161,3 +192,6 @@ header {
   top: 0;
   right: 0;
   width: 60%; }
+
+.wwo {
+  margin: 5vH auto 0 5%; }

@@ -11,7 +11,6 @@
 @import './components/molecules/_footTit.scss';
 @import './components/molecules/_market.scss';
 @import './components/molecules/_parag.scss';
-@import './components/molecules/_cardTitle.scss';
 @import './components/molecules/_price.scss';
 @import './components/molecules/_pricePar.scss';
 @import './components/molecules/_newsP.scss';
@@ -20,9 +19,13 @@
 @import './components/molecules/mouse.scss';
 @import './components/molecules/wX.scss';
 @import './components/molecules/we.scss';
+@import './components/atoms/_cardP.scss';
+@import './components/atoms/_cardTitle.scss';
+@import './components/atoms/cardDiv.scss';
 
 //Grid
 @import './components/grid/header.scss';
 @import './components/grid/_flex.scss';
 @import './components/grid/_center.scss';
 @import './components/grid/abso.scss';
+@import './components/grid/wwo.scss';

@@ -11,19 +11,33 @@
                 width: $p50;
             }
         }
+
+        &-3 {
+            @extend .flex--col;
+            flex-wrap: wrap;
+            & > nav, > div, > aside {
+                width: $p33;
+            }
+        }
     }
 
     &--row {
         @extend .flex;
         flex-direction: column;
 
-        & p {
+        & #p1 {
             width: $p75;
         }
 
-        & .button {
+        & #b1 {
             margin-right: auto;
             margin-left: $p12;
+            margin-top: $ParPx;
+        }
+
+        & #b2 {
+            margin-right: auto;
+            margin-left: $p24;
             margin-top: $ParPx;
         }
     }
