@@ -58,7 +58,8 @@ html {
   .navA--foot {
     font-weight: 400; }
   .navA--footTit {
-    font-size: 20px; }
+    font-size: 20px;
+    margin-bottom: 3vH; }
 
 .serv {
   color: #7E76F9;
@@ -203,7 +204,7 @@ header {
 footer {
   background-image: url("../../../img/footer.png");
   background-size: cover;
-  padding: 10vH 0%; }
+  padding: 21vH 0% 10vH 0%; }
   footer ul {
     list-style: none; }
 
@@ -240,10 +241,13 @@ footer {
   align-items: center;
   justify-content: center; }
   .center .d75, .cardDiv .d75, .cardDiv-price .d75, .priceD .d75, .center-news .d75 {
-    width: 75%; }
+    width: 75%;
+    justify-content: end;
+    justify-self: flex-start;
+    margin-top: 3vH; }
   .center-news {
     text-align: center;
-    padding: 15vH 0%; }
+    padding: 15vH 0% 10vH 0%; }
     .center-news form {
       margin: 5vH 0%; }
 

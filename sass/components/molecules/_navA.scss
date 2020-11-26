@@ -13,5 +13,6 @@
     &--footTit {
         @extend .navA;
         font-size: $TitPx;
+        margin-bottom: 3vH;
     }
 }

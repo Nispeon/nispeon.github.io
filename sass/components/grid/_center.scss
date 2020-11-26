@@ -6,12 +6,15 @@
         @extend .center;
         @extend .flex;
         width: 75%;
+        justify-content: end;
+        justify-self: flex-start;
+        margin-top: 3vH;
     }
 
     &-news {
         @extend .center;
         text-align: center;
-        padding: 15vH 0%;
+        padding: 15vH 0% 10vH 0%;
 
         & form {
             margin: 5vH 0%;
