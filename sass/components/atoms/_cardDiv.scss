@@ -1,8 +1,8 @@
 .cardDiv {
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: $White;
     box-shadow: 1px 11px 46px 2px rgba(126,118,249,0.57);
-    width: 25%;
+    width: 23%;
     margin: auto;
     padding: 20px 3%;
     @extend .flex--row;
@@ -10,6 +10,16 @@
 
     & > div {
         margin: 20px 0;
+        & > h3 {
+            margin-bottom: 20px;
+        }
+    }
+
+    &-price {
+        @extend .cardDiv;
+        width: 27%;
+        border-radius: 25px;
+        margin-top: 10vH;
     }
 }
 

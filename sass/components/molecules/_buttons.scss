@@ -6,11 +6,23 @@
     font-size: $ButPx;
     font-weight: $Semi-Bold;
     border-radius: 50px;
-    padding: 15px 40px;
+    padding: 2vH 40px;
     border: none;
 
     &--white {
+        @extend .button;
+        background-image: none;
         background-color: $White;
-        border: solid 1px $BlueDeg;
+        border: solid 1px $Price;
+        color: $LightBlue;
     }
+}
+
+.cbutt {
+    padding: 1vH 20px;
+    align-self: flex-end;
+}
+
+.pbutt {
+    padding: 1vH 25px;
 }

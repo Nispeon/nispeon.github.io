@@ -1,6 +1,6 @@
 .flex {
     display: flex;
-
+    
     &--col {
         @extend .flex;
         flex-direction: row;
@@ -17,6 +17,14 @@
             flex-wrap: wrap;
             & > nav, > div, > aside {
                 width: $p33;
+            }
+        }
+
+        &-4 {
+            @extend .flex--col;
+            flex-wrap: wrap;
+            & > nav, > div, > aside, > article {
+                width: $p24;
             }
         }
     }

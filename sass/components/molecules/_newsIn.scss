@@ -1,0 +1,15 @@
+.newsIn {
+    background-color: $Input;
+    border-radius: 5px;
+    border: none;
+    padding: 2vH 20px;
+    width: 28%;
+    margin-right: 1%;
+}
+
+.newsIn::placeholder {
+    color : $LightBlue;
+    font-family: $Poppins;
+    font-size: $ButPx;
+    font-weight: $Regular;
+}

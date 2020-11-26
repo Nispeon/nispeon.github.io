@@ -3,9 +3,18 @@
     justify-content: center;
     
     & .d75 {
-        align-items: center;
-        justify-content: left;
+        @extend .center;
         @extend .flex;
         width: 75%;
+    }
+
+    &-news {
+        @extend .center;
+        text-align: center;
+        padding: 15vH 0%;
+
+        & form {
+            margin: 5vH 0%;
+        }
     }
 }

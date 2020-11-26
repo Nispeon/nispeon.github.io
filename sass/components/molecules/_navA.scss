@@ -6,6 +6,12 @@
     margin: 0 33px;
 
     &--foot {
+        @extend .navA;
         font-weight: $Regular;
+    }
+
+    &--footTit {
+        @extend .navA;
+        font-size: $TitPx;
     }
 }

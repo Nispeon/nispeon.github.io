@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,25 @@
     <title>Maquette Sass</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600;700;800&family=Lato&family=Lobster&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="flex--col-2">
+    <header class="flex--col-2" id="Hom">
         <img src="./img/wave.svg" alt="waves" class="abso top">
         <div class="flex center">
             <div class="d75">
                 <img src="./img/logo.png" alt="Logo marketing">
                 <p class="market">Marketing</p>
             </div>
-            
+
         </div>
-        
+
         <nav class="flex center">
-            <a href="" class="navA">HOME</a>
-            <a href="" class="navA">SERVICES</a>
-            <a href="" class="navA">PRICES</a>
-            <a href="" class="navA">CONTACT</a>
+            <a href="#Hom" class="navA">HOME</a>
+            <a href="#Ser" class="navA">SERVICES</a>
+            <a href="#Pri" class="navA">PRICES</a>
+            <a href="#New" class="navA">CONTACT</a>
         </nav>
 
         <article class="flex--row center">
@@ -46,15 +48,19 @@
         <section class="flex--col-2">
 
             <aside>
-                <img src="./img/we-are.png" alt="who we are" class="w100"> 
+                <img src="./img/we-are.png" alt="who we are" class="w100">
             </aside>
-            
-            <article class="flex--row center we" >
+
+            <article class="flex--row center we">
                 <div class="w75">
-                    <p class="smallTitle">BIOGRAPHY</p>
+                    <p class="smallTitle" id="Bio">BIOGRAPHY</p>
                     <h2 class="bigTitle">Who We Are</h2>
-                    <p class="parag">Lorem Media is a full-service social media agency. We offer businesses innovative solutions that deliver the right type of audience to you in the most effective strategies possible. We strive to develop a community around your business, polishing your branding, and improving your public relations.
-                        Social Media is now one of the most powerful marketing tools with the ability to communicate with a target audience in real time.
+                    <p class="parag">Lorem Media is a full-service social media agency. We offer businesses innovative
+                        solutions that deliver the right type of audience to you in the most effective strategies
+                        possible. We strive to develop a community around your business, polishing your branding, and
+                        improving your public relations.
+                        Social Media is now one of the most powerful marketing tools with the ability to communicate
+                        with a target audience in real time.
                         <br><br>
                         It's 2019: time to sink or swim.
                     </p>
@@ -66,7 +72,7 @@
 
         <section>
             <div class="wwo">
-                <p class="smallTitle">BIOGRAPHY</p>
+                <p class="smallTitle" id="Ser">OUR SERVICES</p>
                 <p class="bigTitle">What We Offer</p>
             </div>
 
@@ -75,83 +81,166 @@
                     <article class="cardDiv">
                         <img src="./img/001-process.png" alt="process">
                         <div>
-                           <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
-                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right 
-                                audience. We manage everything from curation of content to management of 
+                            <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
+                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right
+                                audience. We manage everything from curation of content to management of
                                 comments and everything in between.
-                            </p> 
+                            </p>
                         </div>
-                        
-                        <button class="button">SEE MORE</button> 
+
+                        <button class="button cbutt">SEE MORE</button>
                     </article>
                     <article class="cardDiv">
                         <img src="./img/002-social-media.png" alt="process">
                         <div>
-                           <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
-                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right 
-                                audience. We manage everything from curation of content to management of 
+                            <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
+                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right
+                                audience. We manage everything from curation of content to management of
                                 comments and everything in between.
-                            </p> 
+                            </p>
                         </div>
-                        
-                        <button class="button">SEE MORE</button> 
+
+                        <button class="button cbutt">SEE MORE</button>
                     </article>
                     <article class="cardDiv">
                         <img src="./img/003-responsive.png" alt="process">
                         <div>
-                           <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
-                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right 
-                                audience. We manage everything from curation of content to management of 
+                            <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
+                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right
+                                audience. We manage everything from curation of content to management of
                                 comments and everything in between.
-                            </p> 
+                            </p>
                         </div>
-                        
-                        <button class="button">SEE MORE</button> 
+
+                        <button class="button cbutt">SEE MORE</button>
                     </article>
                 </div>
                 <div class="flex--col-3 center orderA">
                     <article class="cardDiv">
                         <img src="./img/004-social-media-1.png" alt="process">
                         <div>
-                           <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
-                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right 
-                                audience. We manage everything from curation of content to management of 
+                            <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
+                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right
+                                audience. We manage everything from curation of content to management of
                                 comments and everything in between.
-                            </p> 
+                            </p>
                         </div>
-                        
-                        <button class="button">SEE MORE</button> 
+
+                        <button class="button cbutt">SEE MORE</button>
                     </article>
                     <article class="cardDiv">
                         <img src="./img/007-analysis.png" alt="process">
                         <div>
-                           <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
-                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right 
-                                audience. We manage everything from curation of content to management of 
+                            <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
+                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right
+                                audience. We manage everything from curation of content to management of
                                 comments and everything in between.
-                            </p> 
+                            </p>
                         </div>
-                        
-                        <button class="button">SEE MORE</button> 
+
+                        <button class="button cbutt">SEE MORE</button>
                     </article>
                     <article class="cardDiv">
                         <img src="./img/008-computer.png" alt="process">
                         <div>
-                           <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
-                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right 
-                                audience. We manage everything from curation of content to management of 
+                            <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
+                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right
+                                audience. We manage everything from curation of content to management of
                                 comments and everything in between.
-                            </p> 
+                            </p>
                         </div>
-                        
-                        <button class="button">SEE MORE</button> 
+
+                        <button class="button cbutt">SEE MORE</button>
                     </article>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="flex center priceD">
+            <p class="smallTitle" id="Pri">Pricing</p>
+            <p class="bigTitle">Our Pricing</p>
+            <div class="flex--col-3">
+                <article class="cardDiv-price">
+                    <div>
+                        <h3 class="priceTitle">GOLD PACKAGE</h3>
+                        <p class="pricePar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
+                            sagittis ac faucibus sit
+                        </p>
+                        <p class="price">$ 140</p>
 
+                    </div>
+
+                    <button class="button--white pbutt">See Details</button>
+                </article>
+                <article class="cardDiv-price">
+                    <div>
+                        <h3 class="priceTitle">PLATINUM PACKAGE</h3>
+                        <p class="pricePar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
+                            sagittis ac faucibus sit
+                        </p>
+                        <p class="price">$ 140</p>
+                    </div>
+
+                    <button class="button pbutt">See Details</button>
+                </article>
+                <article class="cardDiv-price">
+                    <div>
+                        <h3 class="priceTitle">SILVER PACKAGE</h3>
+                        <p class="pricePar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
+                            sagittis ac faucibus sit
+                        </p>
+                        <p class="price">$ 140</p>
+                    </div>
+
+                    <button class="button--white pbutt">See Details</button>
+                </article>
+            </div>
+        </section>
+        <section class="flex-col center-news">
+            <p class="smallTitle" id="New">Newsletter</p>
+            <h2 class="newsP">Do you want to get <span>Special News?</span></h2>
+            <form>
+                <input type="text" placeholder="Drop Your Email" class="newsIn">
+                <button type="submit" class="button">Subscribe</button>
+            </form>
         </section>
     </main>
+    <footer class="flex--col-4 center">
+        <article class="center">
+            <p class="logo">logo.</p>
+            <p class="touch">Stay in touch</p>
+            <nav></nav>
+        </article>
+        <nav class="center">
+            <p class="navA--footTit">Quick Links</p>
+            <ul>
+                <li><a href="#Bio" class="navA--foot">About</a></li>
+                <li><a href="#Hom" class="navA--foot">Home</a></li>
+                <li><a href="#Pri" class="navA--foot">Pricing</a></li>
+                <li><a href="#" class="navA--foot">Location</a></li>
+                <li><a href="#" class="navA--foot">Office</a></li>
+            </ul>
+        </nav>
+        <div class="center">
+            <p class="navA--footTit">Hours</p>
+            <ul>
+                <li class="navA--foot">Monday:     9:00 - 18:00</li>
+                <li class="navA--foot">Tuesday:     9:00 - 18:00</li>
+                <li class="navA--foot">Wednesday:     9:00 - 18:00</li>
+                <li class="navA--foot">Thursday:     9:00 - 18:00</li>
+                <li class="navA--foot">Friday:     9:00 - 18:00</li>
+            </ul>
+        </div>
+        <div class="center">
+            <p class="navA--footTit">Contact</p>
+            <ul>
+                <li class="navA--foot">000-000-000</li>
+                <li class="navA--foot">info@email.com</li>
+                <br>
+                <li class="navA--foot">New York, US</li>
+            </ul>
+        </div>
+
+    </footer>
 </body>
+
 </html>
