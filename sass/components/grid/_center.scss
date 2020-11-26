@@ -1,0 +1,11 @@
+.center {
+    align-items: center;
+    justify-content: center;
+    
+    & .d75 {
+        align-items: center;
+        justify-content: left;
+        @extend .flex;
+        width: 75%;
+    }
+}

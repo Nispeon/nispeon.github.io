@@ -1,0 +1,16 @@
+.bigTitle {
+    color: $Dark;
+    font-family: $Poppins;
+    font-size: $BigPx;
+    font-weight: $Semi-Bold;
+
+    &--h1 {
+        @extend .bigTitle;
+        font-weight: $Regular;
+        width: 75%;
+        & span {
+            font-size: $btsPx;
+            font-weight: $Semi-Bold;
+        }
+    }
+}

@@ -3,7 +3,7 @@ const gulpSass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 
 //browser
-function browser(){
+function browserS(){
     browserSync.init({
         server: {
             baseDir: './'
@@ -32,5 +32,5 @@ function watcher(done){
 module.exports = {
     sassComp,
     watcher,
-    browser: parallel(browser, watcher),
+    browser: parallel(browserS, watcher),
 }

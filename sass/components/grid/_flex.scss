@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+
+    &--col {
+        @extend .flex;
+        flex-direction: row;
+        &-2 {
+            @extend .flex--col;
+            flex-wrap: wrap;
+            & nav, div, article, aside {
+                width: $p50;
+            }
+        }
+    }
+
+    &--row {
+        @extend .flex;
+        flex-direction: column;
+
+        & p {
+            width: $p75;
+        }
+
+        & .button {
+            margin-right: auto;
+            margin-left: $p12;
+            margin-top: $ParPx;
+        }
+    }
+}

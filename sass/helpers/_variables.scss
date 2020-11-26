@@ -5,10 +5,10 @@ $Lobster : 'Lobster', cursive;
 $Poppins : 'Poppins', sans-serif;
 
 //Couleurs
-$BlueDeg : blue;
+$BlueDeg : linear-gradient(280deg, rgba(97,86,249,1) 0%, rgba(9,9,121,1) 40%, rgba(26,18,159,1) 100%);
 $Grey : #484848;
 $Dark : #42495B;
-$Light : #7A839E;
+$LightBlue : #7A839E;
 $TitleBlue : #7E76F9;
 $White : #FFFFFF;
 $Price : #1000FF;
@@ -26,6 +26,7 @@ $PriPx : 30px;
 $PparPx : 48px;
 $NewsPx : 32px;
 $TouPx : 31px;
+$btsPx : 74px;
 
 //Graisses
 $Light : 300;
@@ -34,3 +35,9 @@ $Medium : 500;
 $Semi-Bold : 600;
 $Bold : 700;
 $Extra-Bold : 800;
+
+// %
+$p100 : 100%;
+$p50 : 50%;
+$p75 : 75%;
+$p12 : 12%
