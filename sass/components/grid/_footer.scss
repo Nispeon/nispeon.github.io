@@ -6,3 +6,13 @@ footer  {
     list-style: none; 
     }
 }
+
+
+@media screen and (max-width : $tablet768)
+{
+    footer {
+        background-repeat: no-repeat;
+        padding-bottom: 1vH;
+        padding-top: 10vH;
+    }
+}

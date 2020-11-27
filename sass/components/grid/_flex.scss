@@ -4,6 +4,7 @@
     &--col {
         @extend .flex;
         flex-direction: row;
+
         &-2 {
             @extend .flex--col;
             flex-wrap: wrap;
@@ -22,9 +23,12 @@
 
         &-4 {
             @extend .flex--col;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             & > nav, > div, > aside, > article {
                 width: $p24;
+                &:nth-child(3) {
+                    width: 30%;
+                }
             }
         }
     }
@@ -49,4 +53,53 @@
             margin-top: $ParPx;
         }
     }
+
+    @media screen and (max-width: $laptop1434){
+       .phoneside {
+           width: 40%;
+           padding-top: 18vH;
+        }
+        .homeside {
+            width: 53%;
+        }
+    }
+
+    @media screen and (max-width: $laptop1024){
+        
+        .weareside {
+            width: 40%;
+        }
+
+        .we {
+            width: 60%;
+        }
+
+        #b2 {
+            margin-left: 12%;
+        }
+
+        &--col-3 article {
+            width: 40%;
+        }
+    }
+
+    @media screen and (max-width : $tablet768){
+
+        .homeside {
+            width: 100%;
+            padding: 0;
+            align-self: center;
+            text-align: center;
+        }
+
+        .phoneside {
+            padding: 0;
+            margin: auto;
+        }
+
+        #b1 {
+            margin: 3vH auto;
+        }
+    }
+
 }

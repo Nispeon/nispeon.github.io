@@ -1,0 +1,12 @@
+.home {
+    height: 100vh;
+
+    & article {
+        padding-bottom: 20vH;
+    }
+
+    @media screen and (max-width : $tablet768)
+    {
+        height: auto;
+    }
+}

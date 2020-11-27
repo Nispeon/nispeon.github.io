@@ -21,14 +21,20 @@ html {
       font-size: 74px;
       font-weight: 600; }
 
+@media screen and (max-width: 1025px) {
+  .bigTitle--h1 {
+    font-size: 40px; }
+    .bigTitle--h1 span {
+      font-size: 50px; } }
+
 .button, .button--white {
-  background-image: linear-gradient(280deg, #6156f9 0%, #090979 40%, #1a129f 100%);
+  background-image: linear-gradient(280deg, #6156f9 0%, #1a129f 100%);
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 50px;
-  padding: 2vH 40px;
+  padding: 1.5vH 40px;
   border: none; }
   .button--white {
     background-image: none;
@@ -37,7 +43,7 @@ html {
     color: #7A839E; }
 
 .cbutt {
-  padding: 1vH 20px;
+  padding: 0.5vH 15px;
   align-self: flex-end; }
 
 .pbutt {
@@ -60,6 +66,12 @@ html {
   .navA--footTit {
     font-size: 20px;
     margin-bottom: 3vH; }
+  @media screen and (max-width: 1025px) {
+    .navA, .navA--foot, .navA--footTit, .footTit {
+      margin: 0 15px; } }
+  @media screen and (max-width: 769px) {
+    .navA, .navA--foot, .navA--footTit, .footTit {
+      margin: 0% 2%; } }
 
 .serv {
   color: #7E76F9;
@@ -111,13 +123,12 @@ html {
   border-radius: 50px;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 0);
   box-shadow: 1px 11px 46px 2px rgba(126, 118, 249, 0.57); }
 
 .w100 {
   width: 100%; }
 
-.w75 {
+#w75 {
   width: 75%; }
 
 .we {
@@ -128,36 +139,50 @@ html {
   color: #42495B;
   font-family: "Lato", sans-serif;
   font-size: 15px;
-  font-weight: 400; }
+  font-weight: 400;
+  min-height: 15vH; }
+  @media screen and (max-width: 1000px) {
+    .cardP {
+      font-size: 12px; } }
 
 .cardTitle {
   color: #42495B;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  font-weight: 600; }
+  font-weight: 600;
+  max-height: 3vH; }
 
 .cardDiv, .cardDiv-price {
   border-radius: 30px;
   background-color: #FFFFFF;
-  box-shadow: 1px 11px 46px 2px rgba(126, 118, 249, 0.57);
-  width: 23%;
+  box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.1);
+  width: 27%;
   margin: auto;
-  padding: 20px 3%; }
+  padding: 2vH 2%; }
   .cardDiv > div, .cardDiv-price > div {
     margin: 20px 0; }
     .cardDiv > div > h3, .cardDiv-price > div > h3 {
-      margin-bottom: 20px; }
+      margin-bottom: 5vH; }
   .cardDiv-price {
     width: 27%;
     border-radius: 25px;
     margin-top: 10vH; }
 
 .orderA {
-  margin: 100px 0; }
+  margin: 6vH 0;
+  align-items: flex-start;
+  justify-content: center; }
+  .orderA > .cardDiv, .orderA > .cardDiv-price {
+    min-height: 45vH;
+    margin: 5vH 2%; }
 
 .cards {
   background-image: url("../../../img/background-service.png");
   background-size: cover; }
+
+@media screen and (max-width: 1025px) {
+  .cardDiv-price:nth-of-type(2) {
+    order: 3; } }
 
 .price {
   color: #1000FF;
@@ -182,7 +207,11 @@ html {
   color: #42495B;
   font-family: "Poppins", sans-serif;
   font-size: 28px;
-  font-weight: 300; }
+  font-weight: 300;
+  width: 100%; }
+  @media (max-width: 1560px) and (min-width: 1025px) {
+    .priceTitle {
+      font-size: 18px; } }
 
 .newsIn {
   background-color: #F6F7FB;
@@ -198,8 +227,41 @@ html {
   font-size: 12px;
   font-weight: 400; }
 
-header {
+.newsLab {
+  opacity: 0; }
+
+@media screen and (max-width: 1025px) {
+  .newsIn {
+    width: 40%; } }
+
+.socials {
+  width: fit-content;
+  left: 3%;
+  bottom: 17%;
+  transform: translate(-50%, 0); }
+  .socials > * {
+    margin: 100% 0%; }
+  .socials:after {
+    background: linear-gradient(280deg, #6156f9 0%, #1a129f 100%);
+    content: "";
+    display: block;
+    width: 29%;
+    height: 4vh;
+    margin: 40% 33%; }
+
+#phone {
+  width: 80%; }
+  @media screen and (max-width: 1025px) {
+    #phone {
+      width: 100%; } }
+
+.home {
   height: 100vh; }
+  .home article {
+    padding-bottom: 20vH; }
+  @media screen and (max-width: 769px) {
+    .home {
+      height: auto; } }
 
 footer {
   background-image: url("../../../img/footer.png");
@@ -207,6 +269,12 @@ footer {
   padding: 21vH 0% 10vH 0%; }
   footer ul {
     list-style: none; }
+
+@media screen and (max-width: 769px) {
+  footer {
+    background-repeat: no-repeat;
+    padding-bottom: 1vH;
+    padding-top: 10vH; } }
 
 .flex, .flex--col, .flex--col-2, .flex--col-3, .flex--col-4, .flex--row, .cardDiv, .cardDiv-price, .priceD, .center .d75, .cardDiv .d75, .cardDiv-price .d75, .priceD .d75, .center-news .d75 {
   display: flex; }
@@ -221,9 +289,11 @@ footer {
       .flex--col-3 > nav, .flex--col-3 > div, .flex--col-3 > aside {
         width: 33%; }
     .flex--col-4 {
-      flex-wrap: wrap; }
+      flex-wrap: nowrap; }
       .flex--col-4 > nav, .flex--col-4 > div, .flex--col-4 > aside, .flex--col-4 > article {
         width: 24%; }
+        .flex--col-4 > nav:nth-child(3), .flex--col-4 > div:nth-child(3), .flex--col-4 > aside:nth-child(3), .flex--col-4 > article:nth-child(3) {
+          width: 30%; }
   .flex--row, .cardDiv, .cardDiv-price, .priceD {
     flex-direction: column; }
     .flex--row #p1, .cardDiv #p1, .cardDiv-price #p1, .priceD #p1 {
@@ -236,6 +306,32 @@ footer {
       margin-right: auto;
       margin-left: 24%;
       margin-top: 16px; }
+  @media screen and (max-width: 1434px) {
+    .flex .phoneside, .flex--col .phoneside, .flex--col-2 .phoneside, .flex--col-3 .phoneside, .flex--col-4 .phoneside, .flex--row .phoneside, .cardDiv .phoneside, .cardDiv-price .phoneside, .priceD .phoneside, .center .d75 .phoneside {
+      width: 40%;
+      padding-top: 18vH; }
+    .flex .homeside, .flex--col .homeside, .flex--col-2 .homeside, .flex--col-3 .homeside, .flex--col-4 .homeside, .flex--row .homeside, .cardDiv .homeside, .cardDiv-price .homeside, .priceD .homeside, .center .d75 .homeside {
+      width: 53%; } }
+  @media screen and (max-width: 1025px) {
+    .flex .weareside, .flex--col .weareside, .flex--col-2 .weareside, .flex--col-3 .weareside, .flex--col-4 .weareside, .flex--row .weareside, .cardDiv .weareside, .cardDiv-price .weareside, .priceD .weareside, .center .d75 .weareside {
+      width: 40%; }
+    .flex .we, .flex--col .we, .flex--col-2 .we, .flex--col-3 .we, .flex--col-4 .we, .flex--row .we, .cardDiv .we, .cardDiv-price .we, .priceD .we, .center .d75 .we {
+      width: 60%; }
+    .flex #b2, .flex--col #b2, .flex--col-2 #b2, .flex--col-3 #b2, .flex--col-4 #b2, .flex--row #b2, .cardDiv #b2, .cardDiv-price #b2, .priceD #b2, .center .d75 #b2 {
+      margin-left: 12%; }
+    .flex--col-3 article {
+      width: 40%; } }
+  @media screen and (max-width: 769px) {
+    .flex .homeside, .flex--col .homeside, .flex--col-2 .homeside, .flex--col-3 .homeside, .flex--col-4 .homeside, .flex--row .homeside, .cardDiv .homeside, .cardDiv-price .homeside, .priceD .homeside, .center .d75 .homeside {
+      width: 100%;
+      padding: 0;
+      align-self: center;
+      text-align: center; }
+    .flex .phoneside, .flex--col .phoneside, .flex--col-2 .phoneside, .flex--col-3 .phoneside, .flex--col-4 .phoneside, .flex--row .phoneside, .cardDiv .phoneside, .cardDiv-price .phoneside, .priceD .phoneside, .center .d75 .phoneside {
+      padding: 0;
+      margin: auto; }
+    .flex #b1, .flex--col #b1, .flex--col-2 #b1, .flex--col-3 #b1, .flex--col-4 #b1, .flex--row #b1, .cardDiv #b1, .cardDiv-price #b1, .priceD #b1, .center .d75 #b1 {
+      margin: 3vH auto; } }
 
 .center, .cardDiv, .cardDiv-price, .priceD, .center .d75, .center-news {
   align-items: center;
@@ -251,7 +347,7 @@ footer {
     .center-news form {
       margin: 5vH 0%; }
 
-.abso {
+.abso, .socials {
   position: absolute;
   z-index: -2; }
 

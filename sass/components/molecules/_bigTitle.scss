@@ -1,3 +1,5 @@
+//titres dans les cartes
+
 .bigTitle {
     color: $Dark;
     font-family: $Poppins;
@@ -11,6 +13,17 @@
         & span {
             font-size: $btsPx;
             font-weight: $Semi-Bold;
+        }
+    }
+}
+
+@media screen and (max-width : $laptop1024)
+{
+    .bigTitle--h1 {
+        font-size: $MarPx;
+
+        & span {
+            font-size: $BigPx;
         }
     }
 }

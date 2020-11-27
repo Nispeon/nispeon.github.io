@@ -1,0 +1,20 @@
+.socials {
+    @extend .abso;
+    width: fit-content;
+    left: 3%;
+    bottom: 17%;
+    transform: translate(-50%, 0);
+
+    & > * {
+        margin: 100% 0%;
+    }
+
+    &:after {
+        background: $BlueDeg;
+        content: "";
+        display: block;
+        width: 29%;
+        height: 4vh;
+        margin: 40% 33%;
+    }
+}

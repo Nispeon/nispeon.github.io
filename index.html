@@ -8,52 +8,66 @@
     <title>Maquette Sass</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@600;700;800&family=Lato&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/79d4761c9b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="flex--col-2" id="Hom">
-        <img src="./img/wave.svg" alt="waves" class="abso top">
+
+    <div class="socials flex--row">
+        <img src="./picto/facebook.svg" alt="Facebook">
+        <img src="./picto/google-plus.svg" alt="Google +">
+        <img src="./picto/twitter.svg" alt="Twitter">
+        <img src="./picto/instagram.svg" alt="Instagram">
+    </div>
+
+    <img src="./img/wave.svg" alt="waves" class="abso top">
+
+    <header role="banner" class="flex--col-2" id="Hom">
         <div class="flex center">
             <div class="d75">
                 <img src="./img/logo.png" alt="Logo marketing">
                 <p class="market">Marketing</p>
             </div>
-
         </div>
 
         <nav class="flex center">
-            <a href="#Hom" class="navA">HOME</a>
-            <a href="#Ser" class="navA">SERVICES</a>
-            <a href="#Pri" class="navA">PRICES</a>
-            <a href="#New" class="navA">CONTACT</a>
+            <a href="#Hom" class="navA" title="Home page">HOME</a>
+            <a href="#Ser" class="navA" title="Offered services">SERVICES</a>
+            <a href="#Pri" class="navA" title="Our prices">PRICES</a>
+            <a href="#New" class="navA" title="Contact us">CONTACT</a>
         </nav>
+    </header>
 
-        <article class="flex--row center">
+
+    <section class="home flex--col-2">
+
+        <article role="article" class="homeside flex--row center">
             <h1 class="bigTitle--h1">SOCIAL MEDIA <br><span>FOR BUSINESS!</span></h1>
             <p class="parag" id="p1">PERFOMANCE BASED SOCIAL MEDIA AGENCY<br>
                 WE ARE LOREM MEDIA</p>
-            <button class="button" id="b1">GET A FREE AUDIT</button>
+            <a href="#" title="Get a free audit" class="button" id="b1">GET A FREE AUDIT</a>
         </article>
 
-        <aside>
-            <img src="./img/phone.png" alt="phone" class="w100">
+        <aside class="phoneside">
+            <img src="./img/phone.png" alt="phone" id="phone">
         </aside>
 
         <img src="./picto/mouse.svg" alt="mouse" class="mouse">
 
-    </header>
+    </section>
 
     <main>
         <section class="flex--col-2">
 
-            <aside>
+            <aside class="weareside flex center">
                 <img src="./img/we-are.png" alt="who we are" class="w100">
             </aside>
 
-            <article class="flex--row center we">
-                <div class="w75">
+            <article role="article" class="flex--row center we">
+                <div id="w75">
                     <p class="smallTitle" id="Bio">BIOGRAPHY</p>
                     <h2 class="bigTitle">Who We Are</h2>
                     <p class="parag">Lorem Media is a full-service social media agency. We offer businesses innovative
@@ -66,101 +80,103 @@
                         It's 2019: time to sink or swim.
                     </p>
                 </div>
-                <button class="button" id="b2">SEE MORE</button>
+                <a href="#" title="See more about us" class="button" id="b2">SEE MORE</a>
             </article>
 
         </section>
 
         <section>
+
             <div class="wwo">
                 <p class="smallTitle" id="Ser">OUR SERVICES</p>
                 <p class="bigTitle">What We Offer</p>
             </div>
 
-            <div class="flex--row-2 cards">
-                <div class="flex--col-3 center orderA">
-                    <article class="cardDiv">
-                        <img src="./img/001-process.png" alt="process">
-                        <div>
-                            <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
-                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right
-                                audience. We manage everything from curation of content to management of
-                                comments and everything in between.
-                            </p>
-                        </div>
 
-                        <button class="button cbutt">SEE MORE</button>
-                    </article>
-                    <article class="cardDiv">
-                        <img src="./img/002-social-media.png" alt="process">
-                        <div>
-                            <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
-                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right
-                                audience. We manage everything from curation of content to management of
-                                comments and everything in between.
-                            </p>
-                        </div>
+            <div class="flex--col-3 cards orderA">
+                <article role="article" class="cardDiv">
+                    <img src="./img/001-process.png" alt="process">
+                    <div>
+                        <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
+                        <p class="cardP">Perfect for growing your brand’s social community and engage with the right
+                            audience. We manage everything from curation of content to management of
+                            comments and everything in between.
+                        </p>
+                    </div>
 
-                        <button class="button cbutt">SEE MORE</button>
-                    </article>
-                    <article class="cardDiv">
-                        <img src="./img/003-responsive.png" alt="process">
-                        <div>
-                            <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
-                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right
-                                audience. We manage everything from curation of content to management of
-                                comments and everything in between.
-                            </p>
-                        </div>
+                    <a href="#" title="See more" class="button cbutt">SEE MORE</a>
+                </article>
+                <article role="article" class="cardDiv">
+                    <img src="./img/002-social-media.png" alt="process">
+                    <div>
+                        <h3 class="cardTitle">SOCIALS GROWTH CAMPAIGN</h3>
+                        <p class="cardP">Our social growth campaign will have your socials come alive.
+                            With constant growth and engagement you will be sure to have the thriving you’ve been
+                            looking for.
+                        </p>
+                    </div>
 
-                        <button class="button cbutt">SEE MORE</button>
-                    </article>
-                </div>
-                <div class="flex--col-3 center orderA">
-                    <article class="cardDiv">
-                        <img src="./img/004-social-media-1.png" alt="process">
-                        <div>
-                            <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
-                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right
-                                audience. We manage everything from curation of content to management of
-                                comments and everything in between.
-                            </p>
-                        </div>
+                    <a href="#" title="See more" class="button cbutt">SEE MORE</a>
+                </article>
+                <article role="article" class="cardDiv">
+                    <img src="./img/003-responsive.png" alt="process">
+                    <div>
+                        <h3 class="cardTitle">BRANDING & MEDIA</h3>
+                        <p class="cardP">Done right, branding offers a company an edge over the competition. So what
+                            exactly is branding, and why is it important for companies to integrate a well-rounded
+                            branding and media strategy?
+                        </p>
+                    </div>
 
-                        <button class="button cbutt">SEE MORE</button>
-                    </article>
-                    <article class="cardDiv">
-                        <img src="./img/007-analysis.png" alt="process">
-                        <div>
-                            <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
-                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right
-                                audience. We manage everything from curation of content to management of
-                                comments and everything in between.
-                            </p>
-                        </div>
+                    <a href="#" title="See more" class="button cbutt">SEE MORE</a>
+                </article>
 
-                        <button class="button cbutt">SEE MORE</button>
-                    </article>
-                    <article class="cardDiv">
-                        <img src="./img/008-computer.png" alt="process">
-                        <div>
-                            <h3 class="cardTitle">SOCIAL MEDIA MANAGEMENT</h3>
-                            <p class="cardP">Perfect for growing your brand’s social community and engage with the right
-                                audience. We manage everything from curation of content to management of
-                                comments and everything in between.
-                            </p>
-                        </div>
+                <article role="article" class="cardDiv">
+                    <img src="./img/004-social-media-1.png" alt="process">
+                    <div>
+                        <h3 class="cardTitle">INFLUENCER MARKETING</h3>
+                        <p class="cardP">We will pair your business with influencers that speak to your audience.
+                            Influencer Marketing is the most effective way to reach a loyal audience.
+                        </p>
+                    </div>
 
-                        <button class="button cbutt">SEE MORE</button>
-                    </article>
-                </div>
+                    <a href="#" title="See more" class="button cbutt">SEE MORE</a>
+                </article>
+
+                <article role="article" class="cardDiv">
+                    <img src="./img/007-analysis.png" alt="process">
+                    <div>
+                        <h3 class="cardTitle">SOCIAL MEDIA PAID ADVERTISING</h3>
+                        <p class="cardP">Our ad campaigns will bring you the results your looking for. From brand
+                            awareness campaigns to lead funnels, we have got the tools to create the right ads for
+                            your business. Our re-targeting campaigns will be sure to get your visitors coming back
+                            to your site.
+                        </p>
+                    </div>
+
+                    <a href="#" title="See more" class="button cbutt">SEE MORE</a>
+                </article>
+
+                <article role="article" class="cardDiv">
+                    <img src="./img/008-computer.png" alt="process">
+                    <div>
+                        <h3 class="cardTitle">CONTENT MARKETING SERVICES</h3>
+                        <p class="cardP">We can create and provide your company with the best content marketing for
+                            your socials to improve online presence. Creating valuable and quality content helps
+                            boost conversions and improve customer retention.
+                        </p>
+                    </div>
+
+                    <a href="#" title="See more" class="button cbutt">SEE MORE</a>
+                </article>
             </div>
+
         </section>
         <section class="flex center priceD">
             <p class="smallTitle" id="Pri">Pricing</p>
             <p class="bigTitle">Our Pricing</p>
             <div class="flex--col-3">
-                <article class="cardDiv-price">
+                <article role="article" class="cardDiv-price">
                     <div>
                         <h3 class="priceTitle">GOLD PACKAGE</h3>
                         <p class="pricePar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
@@ -170,9 +186,10 @@
 
                     </div>
 
-                    <button class="button--white pbutt">See Details</button>
+                    <a href="#" title="" class="button--white pbutt">See Details</a>
                 </article>
-                <article class="cardDiv-price">
+
+                <article role="article" class="cardDiv-price">
                     <div>
                         <h3 class="priceTitle">PLATINUM PACKAGE</h3>
                         <p class="pricePar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
@@ -183,7 +200,8 @@
 
                     <button class="button pbutt">See Details</button>
                 </article>
-                <article class="cardDiv-price">
+
+                <article role="article" class="cardDiv-price">
                     <div>
                         <h3 class="priceTitle">SILVER PACKAGE</h3>
                         <p class="pricePar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh,
@@ -192,43 +210,44 @@
                         <p class="price">$ 140</p>
                     </div>
 
-                    <button class="button--white pbutt">See Details</button>
+                    <a href="#" title="See details" class="button--white pbutt">See Details</a>
                 </article>
             </div>
         </section>
         <section class="flex-col center-news">
             <p class="smallTitle" id="New">Newsletter</p>
             <h2 class="newsP">Do you want to get <span>Special News?</span></h2>
-            <form>
+            <form action="" method="GET">
+                <label class="newsLab">Email adress</label>
                 <input type="text" placeholder="Drop Your Email" class="newsIn">
                 <button type="submit" class="button">Subscribe</button>
             </form>
         </section>
     </main>
     <footer class="flex--col-4 center">
-        <article class="center">
+        <article role="article" class="center">
             <p class="logo">logo.</p>
             <p class="touch">Stay in touch</p>
-            <nav></nav>
+            <div></div>
         </article>
         <nav class="center">
             <p class="navA--footTit">Quick Links</p>
             <ul>
-                <li><a href="#Bio" class="navA--foot">About</a></li>
-                <li><a href="#Hom" class="navA--foot">Home</a></li>
-                <li><a href="#Pri" class="navA--foot">Pricing</a></li>
-                <li><a href="#" class="navA--foot">Location</a></li>
-                <li><a href="#" class="navA--foot">Office</a></li>
+                <li><a href="#Bio" class="navA--foot" title="About us">About</a></li>
+                <li><a href="#Hom" class="navA--foot" title="Homepage">Home</a></li>
+                <li><a href="#Pri" class="navA--foot" title="Our pricing">Pricing</a></li>
+                <li><a href="#" class="navA--foot" title="Where we are">Location</a></li>
+                <li><a href="#" class="navA--foot" title="Our office">Office</a></li>
             </ul>
         </nav>
         <div class="center">
             <p class="navA--footTit">Hours</p>
             <ul>
-                <li class="navA--foot">Monday:     9:00 - 18:00</li>
-                <li class="navA--foot">Tuesday:     9:00 - 18:00</li>
-                <li class="navA--foot">Wednesday:     9:00 - 18:00</li>
-                <li class="navA--foot">Thursday:     9:00 - 18:00</li>
-                <li class="navA--foot">Friday:     9:00 - 18:00</li>
+                <li class="navA--foot">Monday: 9:00 - 18:00</li>
+                <li class="navA--foot">Tuesday: 9:00 - 18:00</li>
+                <li class="navA--foot">Wednesday: 9:00 - 18:00</li>
+                <li class="navA--foot">Thursday: 9:00 - 18:00</li>
+                <li class="navA--foot">Friday: 9:00 - 18:00</li>
             </ul>
         </div>
         <div class="center">

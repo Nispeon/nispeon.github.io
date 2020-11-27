@@ -25,9 +25,12 @@
 @import './components/atoms/priceD.scss';
 @import './components/atoms/priceTitle.scss';
 @import './components/molecules/newsIn.scss';
+@import './components/grid/socials.scss';
+@import './components/molecules/phone.scss'; 
+  
 
 //Grid
-@import './components/grid/header.scss';
+@import './components/grid/home.scss';
 @import './components/grid/footer.scss';
 @import './components/grid/_flex.scss';
 @import './components/grid/_center.scss';
