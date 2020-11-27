@@ -10,4 +10,9 @@
     @media screen and (max-width: 1000px) {
         font-size: $ButPx;
     }
+
+    @media screen and (max-width : $tablet618)
+    {
+        font-size: $CarTPx;
+    }
 }

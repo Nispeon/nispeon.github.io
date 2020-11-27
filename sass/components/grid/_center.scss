@@ -19,5 +19,10 @@
         & form {
             margin: 5vH 0%;
         }
+
+        @media screen and (max-width : $tablet768)
+        {
+            padding: 10vH 0% 0% 0%;
+        }
     }
 }

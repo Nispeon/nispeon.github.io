@@ -14,3 +14,10 @@
     bottom: 0;
     width: 100%;
 }
+
+@media screen and (max-width : $tablet618)
+{
+    .top {
+        width: 90%;
+    }
+}

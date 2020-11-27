@@ -12,7 +12,16 @@ footer  {
 {
     footer {
         background-repeat: no-repeat;
+        background-position: center;
+        background-origin: border-box;
         padding-bottom: 1vH;
-        padding-top: 10vH;
+        padding-top: 30vH;
     }
+}
+
+@media screen and (max-width: $laptop1024) {
+    
+    // footer {
+    //     background-position-x: left;
+    // }
 }

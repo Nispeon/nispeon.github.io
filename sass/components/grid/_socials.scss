@@ -17,4 +17,17 @@
         height: 4vh;
         margin: 40% 33%;
     }
+
+    @media screen and (max-width : $tablet768)
+    {
+        bottom: 30%;
+    }
+
+    @media screen and (max-width : 400px)
+    {
+        &.flex { // appelle du flex pour override le display flex
+            display: none;
+        }
+        
+    }
 }

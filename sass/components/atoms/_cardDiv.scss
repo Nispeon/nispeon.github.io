@@ -33,6 +33,11 @@
         min-height: 45vH;
         margin: 5vH 2%;
     }
+
+    @media screen and (max-width : $tablet768)
+    {
+        margin-top: 0;
+    }
 }
 
 .cards {
@@ -44,4 +49,16 @@
     .cardDiv-price:nth-of-type(2) {
         order: 3;
     }
+}
+
+@media screen and (max-width : $tablet618)
+{
+    .cardDiv {
+        padding: 2vH 5%;
+    }
+
+    .cardDiv-price:nth-of-type(3) {
+        order: 3;
+    }
+    
 }

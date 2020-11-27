@@ -27,3 +27,18 @@
         }
     }
 }
+
+@media screen and (max-width : $tablet618)
+{
+    .bigTitle--h1 {
+        font-size: $PriPx;
+
+        & span {
+            font-size: $NewsPx;
+        }
+    }
+
+    .bigTitle {
+        font-size: $PriPx;
+    }
+}

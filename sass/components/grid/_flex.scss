@@ -7,6 +7,7 @@
 
         &-2 {
             @extend .flex--col;
+
             flex-wrap: wrap;
             & nav, div, article, aside {
                 width: $p50;
@@ -83,7 +84,8 @@
         }
     }
 
-    @media screen and (max-width : $tablet768){
+    @media screen and (max-width : $tablet768)
+    {
 
         .homeside {
             width: 100%;
@@ -101,5 +103,51 @@
             margin: 3vH auto;
         }
     }
+}
 
+@media screen and (max-width : $tablet618)
+{
+    nav.center.flex {
+        flex-direction: column;
+        padding: 2vH 5%;
+        & a {
+            align-self: center;
+            margin: 1vH 0%;
+        }
+    }
+
+    .flex--col-2.weAre  {
+        flex-direction: column-reverse;
+
+        & .we, .weareside {
+            width: 90%;
+            align-self: center;
+            margin: 5vH 0%;
+        }
+    }
+
+    .flex--col-3 article {
+        width: 100%;
+    }
+    .flex--col-4 {
+        flex-direction: column;
+        & > div, nav, article {
+            width: 80%;
+            margin: 2vH auto;
+            text-align: center;
+
+            &:nth-child(3) {
+                width: 80%;
+            }
+            
+            & ul, li {
+                width: 100%;
+                margin: auto;
+            }
+
+            & span {
+                line-break: auto;
+            }
+        }
+    }
 }

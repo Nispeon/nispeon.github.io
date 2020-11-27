@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 html {
   scroll-behavior: smooth; }
@@ -26,6 +27,14 @@ html {
     font-size: 40px; }
     .bigTitle--h1 span {
       font-size: 50px; } }
+
+@media screen and (max-width: 619px) {
+  .bigTitle--h1 {
+    font-size: 30px; }
+    .bigTitle--h1 span {
+      font-size: 32px; }
+  .bigTitle, .bigTitle--h1 {
+    font-size: 30px; } }
 
 .button, .button--white {
   background-image: linear-gradient(280deg, #6156f9 0%, #1a129f 100%);
@@ -88,6 +97,10 @@ html {
   font-size: 40px;
   font-weight: 700;
   margin-top: 24px; }
+  @media screen and (max-width: 619px) {
+    .market {
+      font-size: 25px;
+      display: none; } }
 
 .parag {
   color: #7A839E;
@@ -124,6 +137,9 @@ html {
   left: 50%;
   bottom: 0;
   box-shadow: 1px 11px 46px 2px rgba(126, 118, 249, 0.57); }
+  @media screen and (max-width: 769px) {
+    .mouse {
+      display: none; } }
 
 .w100 {
   width: 100%; }
@@ -144,6 +160,9 @@ html {
   @media screen and (max-width: 1000px) {
     .cardP {
       font-size: 12px; } }
+  @media screen and (max-width: 619px) {
+    .cardP {
+      font-size: 18px; } }
 
 .cardTitle {
   color: #42495B;
@@ -175,6 +194,9 @@ html {
   .orderA > .cardDiv, .orderA > .cardDiv-price {
     min-height: 45vH;
     margin: 5vH 2%; }
+  @media screen and (max-width: 769px) {
+    .orderA {
+      margin-top: 0; } }
 
 .cards {
   background-image: url("../../../img/background-service.png");
@@ -182,6 +204,12 @@ html {
 
 @media screen and (max-width: 1025px) {
   .cardDiv-price:nth-of-type(2) {
+    order: 3; } }
+
+@media screen and (max-width: 619px) {
+  .cardDiv, .cardDiv-price {
+    padding: 2vH 5%; }
+  .cardDiv-price:nth-of-type(3) {
     order: 3; } }
 
 .price {
@@ -234,6 +262,11 @@ html {
   .newsIn {
     width: 40%; } }
 
+@media screen and (max-width: 1025px) {
+  .newsIn {
+    width: 90%;
+    margin-bottom: 2vH; } }
+
 .socials {
   width: fit-content;
   left: 3%;
@@ -248,6 +281,12 @@ html {
     width: 29%;
     height: 4vh;
     margin: 40% 33%; }
+  @media screen and (max-width: 769px) {
+    .socials {
+      bottom: 30%; } }
+  @media screen and (max-width: 400px) {
+    .socials.flex, .socials.flex--col, .socials.flex--col-2, .socials.flex--col-3, .socials.flex--col-4, .socials.flex--row, .socials.cardDiv, .socials.cardDiv-price, .socials.priceD, .center .socials.d75, .cardDiv .socials.d75, .cardDiv-price .socials.d75, .priceD .socials.d75, .center-news .socials.d75 {
+      display: none; } }
 
 #phone {
   width: 80%; }
@@ -261,7 +300,11 @@ html {
     padding-bottom: 20vH; }
   @media screen and (max-width: 769px) {
     .home {
-      height: auto; } }
+      height: 80vH;
+      padding: 10vH 0; } }
+  @media screen and (max-width: 619px) {
+    .home {
+      padding: 20px 0; } }
 
 footer {
   background-image: url("../../../img/footer.png");
@@ -273,10 +316,12 @@ footer {
 @media screen and (max-width: 769px) {
   footer {
     background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
     padding-bottom: 1vH;
-    padding-top: 10vH; } }
+    padding-top: 30vH; } }
 
-.flex, .flex--col, .flex--col-2, .flex--col-3, .flex--col-4, .flex--row, .cardDiv, .cardDiv-price, .priceD, .center .d75, .cardDiv .d75, .cardDiv-price .d75, .priceD .d75, .center-news .d75 {
+.flex, .flex--col, .flex--col-2, .flex--col-3, .flex--col-4, .flex--row, .cardDiv, .cardDiv-price, .priceD, .center .d75 {
   display: flex; }
   .flex--col, .flex--col-2, .flex--col-3, .flex--col-4 {
     flex-direction: row; }
@@ -333,6 +378,35 @@ footer {
     .flex #b1, .flex--col #b1, .flex--col-2 #b1, .flex--col-3 #b1, .flex--col-4 #b1, .flex--row #b1, .cardDiv #b1, .cardDiv-price #b1, .priceD #b1, .center .d75 #b1 {
       margin: 3vH auto; } }
 
+@media screen and (max-width: 619px) {
+  nav.center.flex, nav.cardDiv, nav.cardDiv-price, nav.priceD, nav.center.flex--col, nav.center.flex--col-2, nav.flex--col-2.center-news, nav.center.flex--col-3, nav.flex--col-3.center-news, nav.center.flex--col-4, nav.flex--col-4.center-news, nav.flex--col.center-news, nav.center.flex--row, nav.flex--row.center-news, .center nav.d75, .cardDiv nav.d75, .cardDiv-price nav.d75, .priceD nav.d75, .center-news nav.d75, nav.flex.center-news {
+    flex-direction: column;
+    padding: 2vH 5%; }
+    nav.center.flex a, nav.cardDiv a, nav.cardDiv-price a, nav.priceD a, nav.center.flex--col a, nav.flex--col.cardDiv a, nav.flex--col.cardDiv-price a, nav.cardDiv-price.flex--col-2 a, nav.cardDiv-price.flex--col-3 a, nav.cardDiv-price.flex--col-4 a, nav.cardDiv.flex--col-2 a, nav.cardDiv.flex--col-3 a, nav.cardDiv.flex--col-4 a, nav.flex--col.priceD a, nav.priceD.flex--col-2 a, nav.priceD.flex--col-3 a, nav.priceD.flex--col-4 a, nav.center.flex--col-2 a, nav.flex--col-2.center-news a, nav.center.flex--col-3 a, nav.flex--col-3.center-news a, nav.center.flex--col-4 a, nav.flex--col-4.center-news a, nav.flex--col.center-news a, nav.center.flex--row a, nav.flex--row.center-news a, .center nav.d75 a, .cardDiv nav.d75 a, .cardDiv-price nav.d75 a, .priceD nav.d75 a, .center-news nav.d75 a, nav.flex.center-news a, nav.center-news.cardDiv a, nav.center-news.cardDiv-price a, nav.center-news.priceD a {
+      align-self: center;
+      margin: 1vH 0%; }
+  .flex--col-2.weAre {
+    flex-direction: column-reverse; }
+    .flex--col-2.weAre .we, .flex--col-2.weAre .weareside {
+      width: 90%;
+      align-self: center;
+      margin: 5vH 0%; }
+  .flex--col-3 article {
+    width: 100%; }
+  .flex--col-4 {
+    flex-direction: column; }
+    .flex--col-4 > div, .flex--col-4 nav, .flex--col-4 article {
+      width: 80%;
+      margin: 2vH auto;
+      text-align: center; }
+      .flex--col-4 > div:nth-child(3), .flex--col-4 nav:nth-child(3), .flex--col-4 article:nth-child(3) {
+        width: 80%; }
+      .flex--col-4 > div ul, .flex--col-4 > div li, .flex--col-4 nav ul, .flex--col-4 nav li, .flex--col-4 article ul, .flex--col-4 article li {
+        width: 100%;
+        margin: auto; }
+      .flex--col-4 > div span, .flex--col-4 nav span, .flex--col-4 article span {
+        line-break: auto; } }
+
 .center, .cardDiv, .cardDiv-price, .priceD, .center .d75, .center-news {
   align-items: center;
   justify-content: center; }
@@ -346,6 +420,9 @@ footer {
     padding: 15vH 0% 10vH 0%; }
     .center-news form {
       margin: 5vH 0%; }
+    @media screen and (max-width: 769px) {
+      .center-news {
+        padding: 10vH 0% 0% 0%; } }
 
 .abso, .socials {
   position: absolute;
@@ -360,6 +437,10 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%; }
+
+@media screen and (max-width: 619px) {
+  .top {
+    width: 90%; } }
 
 .wwo {
   margin: 5vH auto 0 5%; }

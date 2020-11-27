@@ -4,4 +4,10 @@
     font-size: $MarPx;
     font-weight: $Bold;
     margin-top: 24px;
+
+    @media screen and (max-width : $tablet618)
+    {
+        font-size: $SerPx;
+        display: none;
+    }
 }
