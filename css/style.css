@@ -147,6 +147,10 @@ html {
 #w75 {
   width: 75%; }
 
+@media screen and (max-width: 619px) {
+  #w75 {
+    text-align: center; } }
+
 .we {
   background-image: url("../../../img/background-we-are.png");
   background-size: cover; }
@@ -178,6 +182,8 @@ html {
   width: 27%;
   margin: auto;
   padding: 2vH 2%; }
+  .cardDiv:hover, .cardDiv-price:hover {
+    box-shadow: 0 10px 20px 0 rgba(127, 118, 249, 0.452); }
   .cardDiv > div, .cardDiv-price > div {
     margin: 20px 0; }
     .cardDiv > div > h3, .cardDiv-price > div > h3 {
@@ -281,11 +287,21 @@ html {
     width: 29%;
     height: 4vh;
     margin: 40% 33%; }
+  .socials--foot {
+    padding: 2vH 20%; }
+    @media screen and (max-width: 769px) and (min-width: 619px) {
+      .socials--foot {
+        padding: 2vH 5%; } }
+    .socials--foot .rot90 {
+      transform: rotate(271deg); }
+    .socials--foot > a > img {
+      width: 40%;
+      height: 2vH; }
   @media screen and (max-width: 769px) {
     .socials {
       bottom: 30%; } }
-  @media screen and (max-width: 400px) {
-    .socials.flex, .socials.flex--col, .socials.flex--col-2, .socials.flex--col-3, .socials.flex--col-4, .socials.flex--row, .socials.cardDiv, .socials.cardDiv-price, .socials.priceD, .center .socials.d75, .cardDiv .socials.d75, .cardDiv-price .socials.d75, .priceD .socials.d75, .center-news .socials.d75 {
+  @media screen and (max-width: 619px) {
+    .socials.flex, .socials.socials--foot, .socials--foot > a.socials, .socials.flex--col, .socials.flex--col-2, .socials.flex--col-3, .socials.flex--col-4, .socials.flex--row, .socials.cardDiv, .socials.cardDiv-price, .socials.priceD, .center .socials.d75, .cardDiv .socials.d75, .cardDiv-price .socials.d75, .priceD .socials.d75, .socials--foot .socials.d75, .center-news .socials.d75 {
       display: none; } }
 
 #phone {
@@ -300,10 +316,10 @@ html {
     padding-bottom: 20vH; }
   @media screen and (max-width: 769px) {
     .home {
-      height: 80vH;
       padding: 10vH 0; } }
   @media screen and (max-width: 619px) {
     .home {
+      height: 80vH;
       padding: 20px 0; } }
 
 footer {
@@ -321,23 +337,34 @@ footer {
     padding-bottom: 1vH;
     padding-top: 30vH; } }
 
-.flex, .flex--col, .flex--col-2, .flex--col-3, .flex--col-4, .flex--row, .cardDiv, .cardDiv-price, .priceD, .center .d75 {
+.flex, .socials--foot, .socials--foot > a, .flex--col, .flex--col-2, .flex--col-3, .flex--col-4, .flex--row, .cardDiv, .cardDiv-price, .priceD, .center .d75 {
   display: flex; }
   .flex--col, .flex--col-2, .flex--col-3, .flex--col-4 {
     flex-direction: row; }
     .flex--col-2 {
       flex-wrap: wrap; }
-      .flex--col-2 nav, .flex--col-2 div, .flex--col-2 article, .flex--col-2 aside {
+      .flex--col-2 nav,
+      .flex--col-2 div,
+      .flex--col-2 article,
+      .flex--col-2 aside {
         width: 50%; }
     .flex--col-3 {
       flex-wrap: wrap; }
-      .flex--col-3 > nav, .flex--col-3 > div, .flex--col-3 > aside {
+      .flex--col-3 > nav,
+      .flex--col-3 > div,
+      .flex--col-3 > aside {
         width: 33%; }
     .flex--col-4 {
       flex-wrap: nowrap; }
-      .flex--col-4 > nav, .flex--col-4 > div, .flex--col-4 > aside, .flex--col-4 > article {
+      .flex--col-4 > nav,
+      .flex--col-4 > div,
+      .flex--col-4 > aside,
+      .flex--col-4 > article {
         width: 24%; }
-        .flex--col-4 > nav:nth-child(3), .flex--col-4 > div:nth-child(3), .flex--col-4 > aside:nth-child(3), .flex--col-4 > article:nth-child(3) {
+        .flex--col-4 > nav:nth-child(3),
+        .flex--col-4 > div:nth-child(3),
+        .flex--col-4 > aside:nth-child(3),
+        .flex--col-4 > article:nth-child(3) {
           width: 30%; }
   .flex--row, .cardDiv, .cardDiv-price, .priceD {
     flex-direction: column; }
@@ -349,68 +376,84 @@ footer {
       margin-top: 16px; }
     .flex--row #b2, .cardDiv #b2, .cardDiv-price #b2, .priceD #b2 {
       margin-right: auto;
-      margin-left: 24%;
+      margin-left: 12%;
       margin-top: 16px; }
   @media screen and (max-width: 1434px) {
-    .flex .phoneside, .flex--col .phoneside, .flex--col-2 .phoneside, .flex--col-3 .phoneside, .flex--col-4 .phoneside, .flex--row .phoneside, .cardDiv .phoneside, .cardDiv-price .phoneside, .priceD .phoneside, .center .d75 .phoneside {
+    .flex .phoneside, .socials--foot .phoneside, .flex--col .phoneside, .flex--col-2 .phoneside, .flex--col-3 .phoneside, .flex--col-4 .phoneside, .flex--row .phoneside, .cardDiv .phoneside, .cardDiv-price .phoneside, .priceD .phoneside, .center .d75 .phoneside {
       width: 40%;
       padding-top: 18vH; }
-    .flex .homeside, .flex--col .homeside, .flex--col-2 .homeside, .flex--col-3 .homeside, .flex--col-4 .homeside, .flex--row .homeside, .cardDiv .homeside, .cardDiv-price .homeside, .priceD .homeside, .center .d75 .homeside {
-      width: 53%; } }
+    .flex .homeside, .socials--foot .homeside, .flex--col .homeside, .flex--col-2 .homeside, .flex--col-3 .homeside, .flex--col-4 .homeside, .flex--row .homeside, .cardDiv .homeside, .cardDiv-price .homeside, .priceD .homeside, .center .d75 .homeside {
+      width: 53%;
+      padding-left: 5%; } }
   @media screen and (max-width: 1025px) {
-    .flex .weareside, .flex--col .weareside, .flex--col-2 .weareside, .flex--col-3 .weareside, .flex--col-4 .weareside, .flex--row .weareside, .cardDiv .weareside, .cardDiv-price .weareside, .priceD .weareside, .center .d75 .weareside {
+    .flex .weareside, .socials--foot .weareside, .flex--col .weareside, .flex--col-2 .weareside, .flex--col-3 .weareside, .flex--col-4 .weareside, .flex--row .weareside, .cardDiv .weareside, .cardDiv-price .weareside, .priceD .weareside, .center .d75 .weareside {
       width: 40%; }
-    .flex .we, .flex--col .we, .flex--col-2 .we, .flex--col-3 .we, .flex--col-4 .we, .flex--row .we, .cardDiv .we, .cardDiv-price .we, .priceD .we, .center .d75 .we {
+    .flex .we, .socials--foot .we, .flex--col .we, .flex--col-2 .we, .flex--col-3 .we, .flex--col-4 .we, .flex--row .we, .cardDiv .we, .cardDiv-price .we, .priceD .we, .center .d75 .we {
       width: 60%; }
-    .flex #b2, .flex--col #b2, .flex--col-2 #b2, .flex--col-3 #b2, .flex--col-4 #b2, .flex--row #b2, .cardDiv #b2, .cardDiv-price #b2, .priceD #b2, .center .d75 #b2 {
+    .flex #b2, .socials--foot #b2, .flex--col #b2, .flex--col-2 #b2, .flex--col-3 #b2, .flex--col-4 #b2, .flex--row #b2, .cardDiv #b2, .cardDiv-price #b2, .priceD #b2, .center .d75 #b2 {
       margin-left: 12%; }
     .flex--col-3 article {
       width: 40%; } }
   @media screen and (max-width: 769px) {
-    .flex .homeside, .flex--col .homeside, .flex--col-2 .homeside, .flex--col-3 .homeside, .flex--col-4 .homeside, .flex--row .homeside, .cardDiv .homeside, .cardDiv-price .homeside, .priceD .homeside, .center .d75 .homeside {
+    .flex .homeside, .socials--foot .homeside, .flex--col .homeside, .flex--col-2 .homeside, .flex--col-3 .homeside, .flex--col-4 .homeside, .flex--row .homeside, .cardDiv .homeside, .cardDiv-price .homeside, .priceD .homeside, .center .d75 .homeside {
       width: 100%;
       padding: 0;
       align-self: center;
       text-align: center; }
-    .flex .phoneside, .flex--col .phoneside, .flex--col-2 .phoneside, .flex--col-3 .phoneside, .flex--col-4 .phoneside, .flex--row .phoneside, .cardDiv .phoneside, .cardDiv-price .phoneside, .priceD .phoneside, .center .d75 .phoneside {
+    .flex .phoneside, .socials--foot .phoneside, .flex--col .phoneside, .flex--col-2 .phoneside, .flex--col-3 .phoneside, .flex--col-4 .phoneside, .flex--row .phoneside, .cardDiv .phoneside, .cardDiv-price .phoneside, .priceD .phoneside, .center .d75 .phoneside {
       padding: 0;
       margin: auto; }
-    .flex #b1, .flex--col #b1, .flex--col-2 #b1, .flex--col-3 #b1, .flex--col-4 #b1, .flex--row #b1, .cardDiv #b1, .cardDiv-price #b1, .priceD #b1, .center .d75 #b1 {
+    .flex #b1, .socials--foot #b1, .flex--col #b1, .flex--col-2 #b1, .flex--col-3 #b1, .flex--col-4 #b1, .flex--row #b1, .cardDiv #b1, .cardDiv-price #b1, .priceD #b1, .center .d75 #b1 {
       margin: 3vH auto; } }
 
 @media screen and (max-width: 619px) {
-  nav.center.flex, nav.cardDiv, nav.cardDiv-price, nav.priceD, nav.center.flex--col, nav.center.flex--col-2, nav.flex--col-2.center-news, nav.center.flex--col-3, nav.flex--col-3.center-news, nav.center.flex--col-4, nav.flex--col-4.center-news, nav.flex--col.center-news, nav.center.flex--row, nav.flex--row.center-news, .center nav.d75, .cardDiv nav.d75, .cardDiv-price nav.d75, .priceD nav.d75, .center-news nav.d75, nav.flex.center-news {
+  nav.center.flex, nav.cardDiv, nav.cardDiv-price, nav.priceD, nav.socials--foot, nav.center.flex--col, nav.center.flex--col-2, nav.flex--col-2.center-news, nav.center.flex--col-3, nav.flex--col-3.center-news, nav.center.flex--col-4, nav.flex--col-4.center-news, nav.flex--col.center-news, nav.center.flex--row, nav.flex--row.center-news, .center nav.d75, .cardDiv nav.d75, .cardDiv-price nav.d75, .priceD nav.d75, .socials--foot nav.d75, .center-news nav.d75, nav.flex.center-news {
     flex-direction: column;
     padding: 2vH 5%; }
-    nav.center.flex a, nav.cardDiv a, nav.cardDiv-price a, nav.priceD a, nav.center.flex--col a, nav.flex--col.cardDiv a, nav.flex--col.cardDiv-price a, nav.cardDiv-price.flex--col-2 a, nav.cardDiv-price.flex--col-3 a, nav.cardDiv-price.flex--col-4 a, nav.cardDiv.flex--col-2 a, nav.cardDiv.flex--col-3 a, nav.cardDiv.flex--col-4 a, nav.flex--col.priceD a, nav.priceD.flex--col-2 a, nav.priceD.flex--col-3 a, nav.priceD.flex--col-4 a, nav.center.flex--col-2 a, nav.flex--col-2.center-news a, nav.center.flex--col-3 a, nav.flex--col-3.center-news a, nav.center.flex--col-4 a, nav.flex--col-4.center-news a, nav.flex--col.center-news a, nav.center.flex--row a, nav.flex--row.center-news a, .center nav.d75 a, .cardDiv nav.d75 a, .cardDiv-price nav.d75 a, .priceD nav.d75 a, .center-news nav.d75 a, nav.flex.center-news a, nav.center-news.cardDiv a, nav.center-news.cardDiv-price a, nav.center-news.priceD a {
+    nav.center.flex a, nav.cardDiv a, nav.cardDiv-price a, nav.priceD a, nav.socials--foot a, nav.center.flex--col a, nav.flex--col.cardDiv a, nav.flex--col.cardDiv-price a, nav.cardDiv-price.flex--col-2 a, nav.cardDiv-price.flex--col-3 a, nav.cardDiv-price.flex--col-4 a, nav.cardDiv.flex--col-2 a, nav.cardDiv.flex--col-3 a, nav.cardDiv.flex--col-4 a, nav.flex--col.priceD a, nav.priceD.flex--col-2 a, nav.priceD.flex--col-3 a, nav.priceD.flex--col-4 a, nav.flex--col.socials--foot a, nav.socials--foot.flex--col-2 a, nav.socials--foot.flex--col-3 a, nav.socials--foot.flex--col-4 a, nav.center.flex--col-2 a, nav.flex--col-2.center-news a, nav.center.flex--col-3 a, nav.flex--col-3.center-news a, nav.center.flex--col-4 a, nav.flex--col-4.center-news a, nav.flex--col.center-news a, nav.center.flex--row a, nav.flex--row.socials--foot a, nav.flex--row.center-news a, .center nav.d75 a, .cardDiv nav.d75 a, .cardDiv-price nav.d75 a, .priceD nav.d75 a, .socials--foot nav.d75 a, .center-news nav.d75 a, nav.flex.center-news a, nav.center-news.socials--foot a, nav.center-news.cardDiv a, nav.center-news.cardDiv-price a, nav.center-news.priceD a {
       align-self: center;
       margin: 1vH 0%; }
   .flex--col-2.weAre {
     flex-direction: column-reverse; }
-    .flex--col-2.weAre .we, .flex--col-2.weAre .weareside {
+    .flex--col-2.weAre .we,
+    .flex--col-2.weAre .weareside {
       width: 90%;
       align-self: center;
       margin: 5vH 0%; }
+      .flex--col-2.weAre .we #b2,
+      .flex--col-2.weAre .weareside #b2 {
+        margin-left: auto; }
   .flex--col-3 article {
     width: 100%; }
   .flex--col-4 {
     flex-direction: column; }
-    .flex--col-4 > div, .flex--col-4 nav, .flex--col-4 article {
+    .flex--col-4 > div,
+    .flex--col-4 nav,
+    .flex--col-4 article {
       width: 80%;
       margin: 2vH auto;
       text-align: center; }
-      .flex--col-4 > div:nth-child(3), .flex--col-4 nav:nth-child(3), .flex--col-4 article:nth-child(3) {
+      .flex--col-4 > div:nth-child(3),
+      .flex--col-4 nav:nth-child(3),
+      .flex--col-4 article:nth-child(3) {
         width: 80%; }
-      .flex--col-4 > div ul, .flex--col-4 > div li, .flex--col-4 nav ul, .flex--col-4 nav li, .flex--col-4 article ul, .flex--col-4 article li {
+      .flex--col-4 > div ul,
+      .flex--col-4 > div li,
+      .flex--col-4 nav ul,
+      .flex--col-4 nav li,
+      .flex--col-4 article ul,
+      .flex--col-4 article li {
         width: 100%;
         margin: auto; }
-      .flex--col-4 > div span, .flex--col-4 nav span, .flex--col-4 article span {
+      .flex--col-4 > div span,
+      .flex--col-4 nav span,
+      .flex--col-4 article span {
         line-break: auto; } }
 
-.center, .cardDiv, .cardDiv-price, .priceD, .center .d75, .center-news {
+.center, .cardDiv, .cardDiv-price, .priceD, .socials--foot, .socials--foot > a, .center .d75, .center-news {
   align-items: center;
   justify-content: center; }
-  .center .d75, .cardDiv .d75, .cardDiv-price .d75, .priceD .d75, .center-news .d75 {
+  .center .d75, .cardDiv .d75, .cardDiv-price .d75, .priceD .d75, .socials--foot .d75, .center-news .d75 {
     width: 75%;
     justify-content: end;
     justify-self: flex-start;

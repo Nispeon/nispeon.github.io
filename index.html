@@ -16,15 +16,20 @@
 
 <body>
 
+    <!-- Div flottante avec les réseaux -->
     <div class="socials flex--row">
-        <img src="./picto/facebook.svg" alt="Facebook">
-        <img src="./picto/google-plus.svg" alt="Google +">
-        <img src="./picto/twitter.svg" alt="Twitter">
-        <img src="./picto/instagram.svg" alt="Instagram">
+
+        <a href="#" title="Facebook"><img src="./picto/facebook.svg" alt="Facebook"></a>
+        <a href="#" title="Google +"><img src="./picto/google-plus.svg" alt="Google +"></a>
+        <a href="#" title="Twitter"><img src="./picto/twitter.svg" alt="Twitter"></a>
+        <a href="#" title="Instagram"><img src="./picto/instagram.svg" alt="Instagram"></a>
+
     </div>
 
+    <!-- Image de vague en haut à droite -->
     <img src="./img/wave.svg" alt="waves" class="abso top">
 
+    <!-- Header avec logo à gauche et nav à droite -->
     <header role="banner" class="flex--col-2" id="Hom">
         <div class="flex center">
             <div class="d75">
@@ -42,8 +47,10 @@
     </header>
 
 
+    <!-- Première section  -->
     <section class="home flex--col-2">
 
+        <!-- Texte de gauche -->
         <article role="article" class="homeside flex--row center">
             <h1 class="bigTitle--h1">SOCIAL MEDIA <br><span>FOR BUSINESS!</span></h1>
             <p class="parag" id="p1">PERFOMANCE BASED SOCIAL MEDIA AGENCY<br>
@@ -51,21 +58,27 @@
             <a href="#" title="Get a free audit" class="button" id="b1">GET A FREE AUDIT</a>
         </article>
 
+        <!-- Image à droite -->
         <aside class="phoneside">
             <img src="./img/phone.png" alt="phone" id="phone">
         </aside>
 
+        <!-- Picto de souris en bas de l'écran pour montrer le scroll -->
         <img src="./picto/mouse.svg" alt="mouse" class="mouse">
 
     </section>
 
     <main>
+
+        <!-- Section avec image de mégaphone puis biographie -->
         <section class="flex--col-2 weAre">
 
+            <!-- Image à gauche -->
             <aside class="weareside flex center">
                 <img src="./img/we-are.png" alt="who we are" class="w100">
             </aside>
 
+            <!-- Texte à droite -->
             <article role="article" class="flex--row center we">
                 <div id="w75">
                     <p class="smallTitle" id="Bio">BIOGRAPHY</p>
@@ -85,15 +98,18 @@
 
         </section>
 
+        <!-- Section avec cartes sur les services proposés -->
         <section>
 
+            <!-- Titre -->
             <div class="wwo">
                 <p class="smallTitle" id="Ser">OUR SERVICES</p>
                 <p class="bigTitle">What We Offer</p>
             </div>
 
-
+            <!-- Div conteneur avec le flex -->
             <div class="flex--col-3 cards orderA">
+                <!-- Carte proposant un service -->
                 <article role="article" class="cardDiv">
                     <img src="./img/001-process.png" alt="process">
                     <div>
@@ -106,6 +122,8 @@
 
                     <a href="#" title="See more" class="button cbutt">SEE MORE</a>
                 </article>
+
+                <!-- Carte proposant un service -->
                 <article role="article" class="cardDiv">
                     <img src="./img/002-social-media.png" alt="process">
                     <div>
@@ -118,6 +136,8 @@
 
                     <a href="#" title="See more" class="button cbutt">SEE MORE</a>
                 </article>
+
+                <!-- Carte proposant un service -->
                 <article role="article" class="cardDiv">
                     <img src="./img/003-responsive.png" alt="process">
                     <div>
@@ -131,6 +151,7 @@
                     <a href="#" title="See more" class="button cbutt">SEE MORE</a>
                 </article>
 
+                <!-- Carte proposant un service -->
                 <article role="article" class="cardDiv">
                     <img src="./img/004-social-media-1.png" alt="process">
                     <div>
@@ -143,6 +164,7 @@
                     <a href="#" title="See more" class="button cbutt">SEE MORE</a>
                 </article>
 
+                <!-- Carte proposant un service -->
                 <article role="article" class="cardDiv">
                     <img src="./img/007-analysis.png" alt="process">
                     <div>
@@ -157,6 +179,7 @@
                     <a href="#" title="See more" class="button cbutt">SEE MORE</a>
                 </article>
 
+                <!-- Carte proposant un service -->
                 <article role="article" class="cardDiv">
                     <img src="./img/008-computer.png" alt="process">
                     <div>
@@ -172,10 +195,17 @@
             </div>
 
         </section>
+
+        <!-- Section avec trois cartes qui proposent les prix -->
         <section class="flex center priceD">
+
             <p class="smallTitle" id="Pri">Pricing</p>
             <p class="bigTitle">Our Pricing</p>
+
+            <!-- Div contenteur avec le flex -->
             <div class="flex--col-3">
+
+                <!-- Carte avec prix -->
                 <article role="article" class="cardDiv-price">
                     <div>
                         <h3 class="priceTitle">GOLD PACKAGE</h3>
@@ -183,12 +213,12 @@
                             sagittis ac faucibus sit
                         </p>
                         <p class="price">$ 140</p>
-
                     </div>
 
                     <a href="#" title="" class="button--white pbutt">See Details</a>
                 </article>
 
+                <!-- Carte avec prix -->
                 <article role="article" class="cardDiv-price">
                     <div>
                         <h3 class="priceTitle">PLATINUM PACKAGE</h3>
@@ -201,6 +231,7 @@
                     <button class="button pbutt">See Details</button>
                 </article>
 
+                <!-- Carte avec prix -->
                 <article role="article" class="cardDiv-price">
                     <div>
                         <h3 class="priceTitle">SILVER PACKAGE</h3>
@@ -214,22 +245,39 @@
                 </article>
             </div>
         </section>
+
+        <!-- Section pour souscrire à la newsletter -->
         <section class="flex-col center-news">
+
             <p class="smallTitle" id="New">Newsletter</p>
             <h2 class="newsP">Do you want to get <span>Special News?</span></h2>
+
+            <!-- Form pour mettre l'input de l'email -->
             <form action="" method="GET">
                 <label class="newsLab">Email adress</label>
-                <input type="text" placeholder="Drop Your Email" class="newsIn">
+                <input type="email" placeholder="Drop Your Email" class="newsIn">
                 <button type="submit" class="button">Subscribe</button>
             </form>
+
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="flex--col-4 center">
+
+        <!-- Première partie avec logo + réseaux -->
         <article role="article" class="center">
             <p class="logo">logo.</p>
             <p class="touch">Stay in touch</p>
-            <div></div>
+            <div class="socials--foot flex center">
+                <a href="#" title="Facebook"><img src="./picto/facebook--foot.svg" alt="Facebook" class="rot90"></a>
+                <a href="#" title="Google +"><img src="./picto/google-plus--foot.svg" alt="Google +" class="rot90"></a>
+                <a href="#" title="Twitter"><img src="./picto/twitter--foot.svg" alt="Twitter"></a>
+                <a href="#" title="Instagram"><img src="./picto/instagram--foot.svg" alt="Instagram"></a>
+            </div>
         </article>
+
+        <!-- Liens vers les sections du site -->
         <nav class="center">
             <p class="navA--footTit">Quick Links</p>
             <ul>
@@ -240,16 +288,20 @@
                 <li><a href="#" class="navA--foot" title="Our office">Office</a></li>
             </ul>
         </nav>
+
+        <!-- Horaires de la boutique -->
         <div class="center">
             <p class="navA--footTit">Hours</p>
             <ul>
-                <li class="navA--foot">Monday:  9:00 - 18:00</li>
+                <li class="navA--foot">Monday: 9:00 - 18:00</li>
                 <li class="navA--foot">Tuesday: 9:00 - 18:00</li>
                 <li class="navA--foot">Wednesday: 9:00 - 18:00</li>
                 <li class="navA--foot">Thursday: 9:00 - 18:00</li>
                 <li class="navA--foot">Friday: 9:00 - 18:00</li>
             </ul>
         </div>
+
+        <!-- Coordonnées de l'entreprise -->
         <div class="center">
             <p class="navA--footTit">Contact</p>
             <ul>

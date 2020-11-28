@@ -1,3 +1,5 @@
+// première section
+
 .home {
     height: 100vh;
 
@@ -7,12 +9,12 @@
 
     @media screen and (max-width : $tablet768)
     {
-        height: 80vH;
         padding: 10vH 0;
     }
 
     @media screen and (max-width : $tablet618)
     {
+        height: 80vH;
         padding: 20px 0;
     }
 }

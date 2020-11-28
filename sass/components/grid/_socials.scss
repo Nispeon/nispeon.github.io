@@ -1,3 +1,5 @@
+// icones réseaux sociaux dans le header et footer
+
 .socials {
     @extend .abso;
     width: fit-content;
@@ -18,12 +20,40 @@
         margin: 40% 33%;
     }
 
+    &--foot {
+
+        @extend .flex;
+        @extend .center;
+        padding: 2vH 20%;
+
+        @media screen and (max-width : $tablet768) and (min-width: $tablet618)
+        {
+            padding: 2vH 5%;
+        }
+
+        & .rot90 {
+            transform: rotate(271deg);
+        }
+
+        & > a {
+
+            @extend .flex;
+            @extend .center;
+    
+    
+            &> img {
+                width: 40%;
+                height: 2vH;
+            }
+        }
+    }
+
     @media screen and (max-width : $tablet768)
     {
         bottom: 30%;
     }
 
-    @media screen and (max-width : 400px)
+    @media screen and (max-width : $tablet618)
     {
         &.flex { // appelle du flex pour override le display flex
             display: none;
