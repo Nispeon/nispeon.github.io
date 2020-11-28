@@ -17,13 +17,13 @@ footer  {
         background-position: center;
         background-origin: border-box;
         padding-bottom: 1vH;
-        padding-top: 30vH;
+        padding-top: 18vH;
     }
 }
 
-@media screen and (max-width: $laptop1024) {
+@media screen and (max-width: $tablet618) {
     
-    // footer {
-    //     background-position-x: left;
-    // }
+    footer {
+        padding-top: 30vH;
+    }
 }

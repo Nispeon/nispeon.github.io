@@ -6,4 +6,9 @@
     font-size: $CarTPx;
     font-weight: $Semi-Bold;
     max-height: 3vH;
+
+    @media screen and (max-height: 425px){
+        max-height: 100vH;
+    }
 }
+

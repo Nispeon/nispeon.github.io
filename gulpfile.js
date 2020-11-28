@@ -1,10 +1,18 @@
-const { stc, dest, src, symlink, parallel, watch } = require('gulp');
+const {
+    stc,
+    dest,
+    src,
+    symlink,
+    parallel,
+    series,
+    watch
+} = require('gulp');
 const gulpSass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
-// const cleanCSS = require('gulp-clean-css');
+const cleanCSS = require('gulp-clean-css');
 
 //browser
-function browserS(){
+function browserS() {
     browserSync.init({
         server: {
             baseDir: './'
@@ -14,17 +22,18 @@ function browserS(){
 }
 
 // Sass (scss) to Css
-function sassComp(){
+function sassComp() {
     return src('./sass/style.scss')
-    .pipe(gulpSass())
-    // .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(dest('./css/'))
-    .pipe(browserSync.stream());
-    
+        .pipe(gulpSass())
+        .pipe(cleanCSS({
+            compatibility: 'ie8'
+        }))
+        .pipe(dest('./css/'))
+        .pipe(browserSync.stream())
 }
 
 //watch scss
-function watcher(done){
+function watcher(done) {
     watch('./sass/', sassComp)
     browserSync.reload();
     done();
@@ -36,4 +45,5 @@ module.exports = {
     sassComp,
     watcher,
     browser: parallel(browserS, watcher),
+
 }

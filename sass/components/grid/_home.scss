@@ -17,4 +17,8 @@
         height: 80vH;
         padding: 20px 0;
     }
+
+    @media screen and (max-height: 425px){
+        height: 200vH;
+    }
 }
